@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package tutorial;
+
+option java_package = "com.proto.messenger.beans";
+option java_outer_classname = "MessengerDetailsBean";
+
+message MessageDetails{
+  required string name = 1;
+  optional string email = 2;
+  optional double phoneNumber=3;
+  
+}
